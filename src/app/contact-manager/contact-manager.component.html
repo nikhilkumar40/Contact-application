@@ -1,0 +1,67 @@
+<div class="cont1">
+    <div class="contain">
+        <h2>This is my App</h2>
+
+        <a class="btn btn-success btn-sm" href="/contacts/add">
+            <i class="fa fa-plus-circle"></i> Add New
+        </a>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, dolore neque magnam harum cum corporis iure
+            odit quas, voluptatum nemo maiores dolorem ratione commodi explicabo. Aperiam obcaecati minima minus
+            pariatur.</p>
+    </div>
+    <form>
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="search contact">
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="btn btn-outline-dark" value="search">
+            </div>
+        </div>
+    </form>
+    <!-- spinner works -->
+
+    <div *ngIf="loading">
+
+        <app-spinner></app-spinner>
+
+    </div>
+
+    <!-- display error message -->
+
+    <div *ngIf="!loading && errorMessage">
+        <div class="conatiner">
+            <div class="row">
+                <div class="col">
+                    <div class="h4 text-danger fw-bold">{{errorMessage}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <pre>{{contacts | json}}</pre> -->
+
+    <div  *ngIf="!loading && contacts.length>0" >
+        <div class="container" *ngFor="let contact of contacts">
+            <div class="icon"><img src="{{contact.photo}}"></div>
+            <div class="col-sm-7">
+                <ul class="list-group">
+                    <li class="list-group-item">Name: <span>{{contact.name}}</span></li>
+                    <li class="list-group-item">Email: <span>{{contact.email}}</span></li>
+                    <li class="list-group-item">Phone: <span>{{contact.mobile}}</span></li>
+                </ul>
+            </div>
+            <div class="links">
+                <ul class="list-group">
+                    <a routerLink="/contacts/edit/{{contact.id}}" class="btn btn-warning">E <i
+                            class="bi bi-arrow-down-right-circle-fill"></i>&#xF18A;</a>
+                    <a routerLink="/contacts/view/{{contact.id}}" class="btn btn-success">V</a>
+                    <a class="btn btn-danger" (click)="deleteContact(contact.id)">Del</a>
+
+                </ul>
+            </div>
+        </div>
+  
+</div></div>

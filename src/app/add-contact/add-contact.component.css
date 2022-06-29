@@ -1,0 +1,23 @@
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    margin: 4px 0;
+    border: 2px solid rgb(109, 109, 196);
+    text-align: center;
+    width: 50%;
+
+}
+button, .btn{
+    border-radius: 10px;
+    width: 20%;
+    display: inline-block;
+    margin:1px 4px;
+    color: white;
+
+}
+h2{
+    color: blue;
+}

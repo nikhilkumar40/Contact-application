@@ -1,0 +1,22 @@
+<div class="container">
+    <h2>Edit contacts</h2>
+   <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus sint et mollitia inventore quisquam, nesciunt dolore, exercitationem sequi autem illum repellendus deserunt temporibus rerum fuga, aliquid commodi minus soluta!
+</p>
+<!-- <pre>{{contact | json}}</pre> -->
+
+<form (submit)="submitUpdate()">
+    <input [(ngModel)]="contact.name" type="text" name="name" id="name" placeholder="name" [value]="contact.name">
+    <input [(ngModel)]="contact.photo" type="text" name="photo" placeholder="photo url" id="purl" [value]="contact.photo">
+    <input [(ngModel)]="contact.email" type="email" name="email" id="email" placeholder="email" [value]="contact.email">
+    <input [(ngModel)]="contact.mobile" type="number" placeholder="0" id="phone" [value]="contact.mobile" name="mobile" >
+    <input [(ngModel)]="contact.company" type="text" name="company" placeholder="company name" [value]="contact.company">
+    <div>
+    <input type="submit"  class="btn btn-success" value="update">
+    <a routerLink="/" class="btn btn-warning">Close</a> 
+    </div>
+
+</form>
+
+<!-- <pre>{{contact | json}}</pre> -->
+
+</div>

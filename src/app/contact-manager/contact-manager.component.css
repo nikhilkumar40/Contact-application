@@ -1,0 +1,50 @@
+.cont1{
+    margin-top: 3em;
+    margin-left: 4em;
+}
+.contain{
+    display: flex;
+    justify-content: left;
+}
+a{
+    padding-top: 5px;
+    margin-left: 12px;
+    height: 50%;
+    margin-top: 9px;
+
+}
+.container{
+    margin-top: 2em;
+    border: 2px solid black;
+    height: 35vh;
+    width: 50%;
+    display: flex;
+    background-color: rgb(199, 235, 235);
+    box-shadow: 0px 0px 30px 0px royalblue;
+}
+.icon img{ 
+    width: 70%;
+    margin-top: 2.9em;
+    margin-left: 1em;
+
+}
+
+.list-group{
+    margin-top: 3em;
+    top: 2em;
+    justify-content: center;
+    text-align: center;
+}
+.list-group span{
+    font-weight: 900;
+}
+.list-group a{
+    width: fit-content;
+    position: relative;
+   
+}
+.links{
+    margin-right: 2em;
+    margin-bottom: 1em;;
+}
+

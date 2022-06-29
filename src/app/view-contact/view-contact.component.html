@@ -1,0 +1,39 @@
+
+<div class="cont">
+    <h2>View contacts</h2>
+   <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus sint et mollitia inventore quisquam, nesciunt dolore, exercitationem sequi autem illum repellendus deserunt temporibus rerum fuga, aliquid commodi minus soluta!
+</p>
+
+<pre>{{group | json}}</pre>
+<div *ngIf="loading">
+
+    <app-spinner></app-spinner>
+
+</div>
+
+<!-- display error message -->
+
+<div *ngIf="!loading && errorMessage">
+    <div class="conatiner">
+        <div class="row">
+            <div class="col">
+                <div class="h4 text-danger fw-bold">{{errorMessage}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="!loading && isNotEmpty()" class="container">
+    <div class="icon"><img [src]="contact.photo"></div>
+    <div class="col-sm-7">
+        <ul class="list-group">
+            <li class="list-group-item">Name: <span>{{contact.name}}</span></li>
+            <li class="list-group-item">Email: <span>{{contact.email}}</span></li>
+            <li class="list-group-item">Phone: <span>{{contact.mobile}}</span></li>
+        </ul>
+        <a routerLink="/" class="btn btn-warning">Go back</a>
+    </div>
+    
+</div>
+
+</div>

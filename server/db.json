@@ -1,0 +1,46 @@
+{
+  "contacts": [
+    {
+      "id": "n7654",
+      "name": "nikhil ",
+      "company": "infy",
+      "email": "xyz@gmail",
+      "title": "youtube",
+      "mobile": "227727727",
+      "photo": "https://www.pixsy.com/wp-content/uploads/2021/04/ben-sweet-2LowviVHZ-E-unsplash-1.jpeg",
+      "groupId": "1"
+    },
+    {
+      "id": "n7656",
+      "name": "anish",
+      "company": "ikjuy",
+      "email": "outz@gmail",
+      "title": "youtube",
+      "mobile": "2277209876",
+      "photo": "https://www.pixsy.com/wp-content/uploads/2021/04/ben-sweet-2LowviVHZ-E-unsplash-1.jpeg",
+      "groupid": "3"
+    }
+  ],
+  "group": [
+    {
+      "id": "1",
+      "name": "collegue"
+    },
+    {
+      "id": "2",
+      "name": "family"
+    },
+    {
+      "id": "3",
+      "name": "friend"
+    },
+    {
+      "id": "4",
+      "name": "service"
+    },
+    {
+      "id": "5",
+      "name": "social"
+    }
+  ]
+}

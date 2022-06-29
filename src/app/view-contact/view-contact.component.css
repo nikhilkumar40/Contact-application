@@ -1,0 +1,39 @@
+.cont{
+    margin: 3em;
+}
+.container{
+    margin: 2em;
+    border: 2px solid black;
+    height: 35vh;
+    width: 50%;
+    display: flex;
+    background-color: rgb(199, 235, 235);
+    box-shadow: 0px 0px 30px 0px royalblue;
+}
+.icon img{ 
+    width: 40%;
+    margin-top: 2.9em;
+    margin-left: 1em;
+
+}
+
+.list-group{
+    margin-top: 3em;
+    top: 2em;
+    justify-content: center;
+    text-align: center;
+}
+.list-group span{
+    font-weight: 900;
+}
+.list-group a{
+    width: fit-content;
+   
+}
+h2{
+    color: blue;
+}
+.btn{
+    position: relative;
+    transform: translateX(-14.4em) translateY(-7px);
+}

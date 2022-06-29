@@ -1,0 +1,25 @@
+<div class="container">
+    <h2>Add contacts</h2>
+   <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus sint et mollitia inventore quisquam, nesciunt dolore, exercitationem sequi autem illum repellendus deserunt temporibus rerum fuga, aliquid commodi minus soluta!
+</p>
+<!-- <pre>{{contact | json}}</pre> -->
+<form (ngSubmit)="addContact()">
+    <input [(ngModel)]="contact.name" name="name" type="text"  placeholder="name">
+    <input [(ngModel)]="contact.photo" type="text" name="photo" placeholder="photo url" id="purl">
+    <input [(ngModel)]="contact.email" type="email" name="email" id="email" placeholder="email">
+    <input [(ngModel)]="contact.mobile" type="number" placeholder="0" id="phone" name="mobile">
+    <input [(ngModel)]="contact.company" type="text" name="company" placeholder="company name">
+    <div>
+        <select [(ngModel)]="contact.groupId" name="groupId" class="form-control" *ngIf="group.length >0" >
+            <option>Select a Group</option>
+            <option *ngFor="let group of group" [value]="group.id">{{group.name}}</option>
+        </select>
+    </div>
+    <div>
+    <input type="submit"  class="btn btn-success" value="submit">
+    <a routerLink="/" class="btn btn-warning">Close</a> 
+    </div>
+
+</form>
+
+</div>
